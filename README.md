@@ -1,8 +1,10 @@
 第5組
 
-3A_B2229752_李哲緒  (60%)簡報製作、程式製作
+3A_B2229752_李哲緒  (70%) 簡報製作、程式製作
 
-2A_B3208571_周彥廷  (40%)簡報製作、程式製作
+2A_B3208571_周彥廷  (30%) 程式製作
+
+4B_B2403060_蔡易閔
 
 題目:踩地雷
 
@@ -33,10 +35,12 @@ q (Quit)：中途退出遊戲。
 
 3.程式如何安裝執行:
 
-開發環境：任何支援 C++11 (或以上) 的編譯器（如 GCC, Clang, MSVC）。
-編譯指令：打開終端機，移動到程式碼資料夾，輸入以下指令進行多檔案編譯：
+步驟一：打開命令提示字元，使用 cd 指令進入程式碼所在資料夾。
+
+步驟二（編譯）：輸入以下指令將原始碼打包成執行檔：
 g++ main.cpp Game.cpp Board.cpp Cell.cpp -o Minesweeper
-執行指令：
-Windows: Minesweeper.exe
+
+步驟三（啟動）：編譯完成後，輸入執行指令即可開始遊戲：
+.\Minesweeper.exe
 
 4.<img width="424" height="190" alt="image" src="https://github.com/user-attachments/assets/b712bce1-12e5-4975-85fb-d2f46d2132a3" />
