@@ -6,16 +6,16 @@
 Board::Board(int w, int h, int mines) : width(w), height(h) {
     grid.resize(height, std::vector<Cell>(width));
     
-    // --- 【防呆機制：限制地雷數量】 ---
+    //限制地雷
     int maxMines = width * height; 
     if (mines >= maxMines) {
-        numMines = maxMines - 1; // 如果地雷太多，強制設為總格數-1 (至少留一格活路)
+        numMines = maxMines - 1; // 如果地雷太多，強制設為總格數-1 (至少留一格)
     } else if (mines <= 0) {
         numMines = 1;            // 如果地雷太少，強制設為 1 顆
     } else {
         numMines = mines;        // 正常情況
     }
-    // ----------------------------------
+    
 
     hiddenSafeCells = width * height - numMines;
     placeMines();
